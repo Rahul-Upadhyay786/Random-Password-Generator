@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate_Random-Password with JavaScript</title>
+</head>
+
+<body style="text-align:center">
+
+    <h1 style="color: Red">
+        FunWithMe
+    </h1>
+
+    <h3>
+        Click on the button to generate random Password.
+    </h3>
+
+    <button onclick="notnow()">
+        Click Here
+    </button>
+
+    <p id="not_remember"></p>
+
+    <script>
+
+        var pass_gen = document.getElementById("not_remember");
+        function notnow() {
+            pass_gen.innerHTML = Math.random().toString(36).slice(2) + Math.random().toString(36).toUpperCase().slice(2);
+                          }
+
+
+    </script>
+
+</body>
+
+</html>
